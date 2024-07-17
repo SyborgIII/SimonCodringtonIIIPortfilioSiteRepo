@@ -1,0 +1,59 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = SimonCodringtonIIIPortfolioApp
+build_property.RootNamespace = SimonCodringtonIIIPortfolioApp
+build_property.ProjectDir = C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Components/ChatBot.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDaGF0Qm90LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/Pages/Showcase.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd2Nhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/Personal Projects/SimonCodringtonIIIPortfolioApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\obj\\Debug\\net8.0\\compressed\\wd9hmamp4e.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\AI Portrait.jpg",
+      "PackagePath": "staticwebassets\\Photos\\AI Portrait.jpg"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\Accounta Bank.png",
+      "PackagePath": "staticwebassets\\Photos\\Accounta Bank.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\Football.jpg",
+      "PackagePath": "staticwebassets\\Photos\\Football.jpg"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\Mesmerizing Lava Lamp Loading Screen Design.mp4",
+      "PackagePath": "staticwebassets\\Photos\\Mesmerizing Lava Lamp Loading Screen Design.mp4"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\Profile Pic1.png",
+      "PackagePath": "staticwebassets\\Photos\\Profile Pic1.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\SiBorg.png",
+      "PackagePath": "staticwebassets\\Photos\\SiBorg.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\portfolio hero photo 10.jpg",
+      "PackagePath": "staticwebassets\\Photos\\portfolio hero photo 10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\portfolio hero photo 11.png",
+      "PackagePath": "staticwebassets\\Photos\\portfolio hero photo 11.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\portfolio hero photo 12.png",
+      "PackagePath": "staticwebassets\\Photos\\portfolio hero photo 12.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\portfolio hero photo 13.png",
+      "PackagePath": "staticwebassets\\Photos\\portfolio hero photo 13.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\portfolio hero photo 2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\portfolio hero photo 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\Photos\\profile pic 2.png",
+      "PackagePath": "staticwebassets\\Photos\\profile pic 2.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\About.css",
+      "PackagePath": "staticwebassets\\css\\About.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\Animate.css",
+      "PackagePath": "staticwebassets\\css\\Animate.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\ChatBot.css",
+      "PackagePath": "staticwebassets\\css\\ChatBot.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\Contact.css",
+      "PackagePath": "staticwebassets\\css\\Contact.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\Footer.css",
+      "PackagePath": "staticwebassets\\css\\Footer.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\HomePage.css",
+      "PackagePath": "staticwebassets\\css\\HomePage.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\Showcase.css",
+      "PackagePath": "staticwebassets\\css\\Showcase.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Personal Projects\\SimonCodringtonIIIPortfolioApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SimonCodringtonIIIPortfolioApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SimonCodringtonIIIPortfolioApp.props",
+      "PackagePath": "build\\SimonCodringtonIIIPortfolioApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SimonCodringtonIIIPortfolioApp.props",
+      "PackagePath": "buildMultiTargeting\\SimonCodringtonIIIPortfolioApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SimonCodringtonIIIPortfolioApp.props",
+      "PackagePath": "buildTransitive\\SimonCodringtonIIIPortfolioApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

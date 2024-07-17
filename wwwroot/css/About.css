@@ -1,0 +1,24 @@
+﻿/* About.css */
+
+.header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.description {
+    font-size: 1.2rem; /* Same as project description in Showcase */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-paper {
+    margin: auto;
+    padding: 2rem;
+}
+
+.nested-item {
+    font-size: 1rem;
+    color: white;
+    margin-left: 2rem;
+}

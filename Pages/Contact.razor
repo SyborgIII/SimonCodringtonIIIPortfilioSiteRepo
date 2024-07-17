@@ -1,0 +1,127 @@
+﻿@page "/contact"
+@using System.Net.Mail
+@using System.Text.RegularExpressions
+@using System.ComponentModel.DataAnnotations
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Contact Me</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
+    <MudPaper Class="pa-4" Elevation="4">
+        <MudText Typo="Typo.h4" Align="Align.Center" Class="mb-4">Contact Me</MudText>
+        <MudText Typo="Typo.body1" Align="Align.Center" Class="mb-4">All messages will be sent to me directly</MudText>
+
+        <MudGrid>
+            <MudItem xs="12" sm="7">
+                <MudForm @ref="form" @bind-IsValid="@formIsValid" @bind-Errors="@errors">
+                    <MudTextField T="string" @bind-Value="contactModel.FullName" Label="Full Name" Required="true" Placeholder="Enter your full name" Variant="Variant.Filled" Class="mb-4" />
+                    <MudTextField T="string" @bind-Value="contactModel.EmailAddress" Label="Email Address" Required="true" Placeholder="Enter your email address" Variant="Variant.Filled" Validation="@(new EmailAddressAttribute { ErrorMessage = "The email address is invalid" })" Class="mb-4" />
+                    <MudTextField T="string" @bind-Value="contactModel.PhoneNumber" Label="Phone Number" Required="true" Placeholder="Enter your phone number" Variant="Variant.Filled" Class="mb-4" />
+                    <MudTextField T="string" @bind-Value="contactModel.Message" Label="Message" Required="true" Placeholder="Enter your message" Variant="Variant.Filled" Lines="5" Class="mb-4" />
+
+                    <MudButton Type="Submit" Variant="Variant.Filled" Color="Color.Primary" Disabled="@(!formIsValid)" Class="mt-2" OnClick="@SendEmail">Submit</MudButton>
+                </MudForm>
+            </MudItem>
+
+            <MudItem xs="12" sm="5">
+                <MudPaper Class="pa-4 mud-height-full">
+                    <MudText Typo="Typo.subtitle2">@($"Errors ({errors.Length})")</MudText>
+                    @foreach (var error in errors)
+                    {
+                        <MudText Color="@Color.Error">@error</MudText>
+                    }
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private ContactModel contactModel = new ContactModel();
+    private MudForm form;
+    private bool formIsValid;
+    private string[] errors = { };
+
+    private async Task SendEmail()
+    {
+        try
+        {
+            // Validate email address format
+            if (!IsValidEmail(contactModel.EmailAddress))
+            {
+                // Handle invalid email address
+                await JSRuntime.InvokeVoidAsync("alert", "Please enter a valid email address.");
+                return;
+            }
+
+            // Create and configure the SMTP client
+            using (var client = new SmtpClient("smtp-mail.outlook.com"))
+            {
+                client.Port = 587;
+                client.Credentials = new System.Net.NetworkCredential("simon.codringtoniii@outlook.com", "O2i3878876");
+                client.EnableSsl = true;
+
+                // Create and configure the email message
+                var emailMessage = new MailMessage
+                {
+                    From = new MailAddress("simon.codringtoniii@outlook.com"),
+                    Subject = "New Contact Me Form Submitted",
+                    Body = $"Hello Si,\nA new form has been submitted. Please look into it.\nName: {contactModel.FullName}\nEmail: {contactModel.EmailAddress}\nPhone: {contactModel.PhoneNumber}\nMessage: {contactModel.Message}"
+                };
+                emailMessage.To.Add("syborgiii@outlook.com");
+
+                // Send the email
+                await client.SendMailAsync(emailMessage);
+
+                // Send an auto-response
+                var responseMessage = new MailMessage
+                {
+                    From = new MailAddress("simon.codringtoniii@outlook.com"),
+                    Subject = "Thank you for reaching out! Auto Response",
+                    Body = $"Hello {contactModel.FullName},\nThank you for taking the time to look through my web application and fill out the contact form. I will make sure to be in touch with you at my earliest convenience.\n\nSincerely,\nSimon Codrington III\nSoftware Engineer\n\n\nThis was sent in response to,\n\n\n\n{contactModel.Message}"
+                };
+                responseMessage.To.Add(contactModel.EmailAddress);
+
+                // Send the auto-response
+                await client.SendMailAsync(responseMessage);
+            }
+
+            // Clear entry fields
+            contactModel = new ContactModel();
+            await form.ResetAsync();
+
+            // Show success alert
+            await JSRuntime.InvokeVoidAsync("alert", "Thank you for your time! I will reach out to you at my earliest convenience");
+
+            // Navigate back to the home page
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            // Handle any errors (e.g., log the error, display an error message to the user)
+            await JSRuntime.InvokeVoidAsync("alert", $"An error occurred: {ex.Message}");
+        }
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private class ContactModel
+    {
+        public string FullName { get; set; }
+        public string EmailAddress { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Message { get; set; }
+    }
+}

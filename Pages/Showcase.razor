@@ -1,0 +1,101 @@
+﻿@page "/showcase"
+@using MudBlazor
+
+<PageTitle>Showcase</PageTitle>
+
+<MudContainer Class="section-header">
+    <MudGrid>
+        <MudItem xs="12" sm="12" md="12">
+            <div class="additional-item">
+                <MudText Typo="Typo.h5" Class="additional-title">Software Engineering and Data Science Showcase</MudText>
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+            <div class="additional-item">
+                <MudText Typo="Typo.body2" Class="additional-description">I have a passion for developing innovative and scalable software solutions. Here are some passion projects of mine.</MudText>
+            </div>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+<MudDivider />
+
+<MudContainer>
+    <MudGrid>
+        <!-- NCAA Football EDA -->
+        <MudItem xs="12" sm="12" md="12" Class="project-item">
+            <MudCard Class="project-card">
+                <MudGrid Class="project-grid">
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudImage Src="/Photos/portfolio hero photo 13.png" ObjectFit="@ObjectFit.Cover" Alt="NCAA Football EDA" Class="project-image" />
+                    </MudItem>
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudCardContent Class="project-content">
+                            <MudText Typo="Typo.h5" Class="project-title">NCAA Football EDA</MudText>
+                            <MudText Typo="Typo.body2" Class="project-description">I conducted an exploratory data analysis of 10 years' worth of recent football data across all Division 1 teams to identify key performance indicators (KPIs) that could predict season win totals. This project was executed using Jupyter Notebook, leveraging libraries such as NumPy, Plotly, and Python for data manipulation and visualization.</MudText>
+                            <MudButton Href="https://notebooksharing.space/view/f4ff70292139e999fd6c890ffc04f2c7ac9791db4b5814d1f1fdf9070c093f19#displayOptions=" Target="_blank">Demo</MudButton>
+                        </MudCardContent>
+                    </MudItem>
+                </MudGrid>
+            </MudCard>
+        </MudItem>
+
+        <!-- Accountability Tracking App -->
+        <MudItem xs="12" sm="12" md="12" Class="project-item">
+            <MudCard Class="project-card">
+                <MudGrid Class="project-grid">
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudCardContent Class="project-content">
+                            <MudText Typo="Typo.h5" Class="project-title">Accountability Tracking App</MudText>
+                            <MudText Typo="Typo.body2" Class="project-description">An application designed for families and teachers to track points awarded for completing tasks and activities. Built using ASP.NET Blazor WebAssembly, with an API developed in .NET, utilizing a SQL database and Entity Framework. The application is deployed and managed on Azure and follows Domain-Driven Design and Clean Architecture principles, ensuring scalability.</MudText>
+                            <MudButton Href="https://uiblazor20240630132733.azurewebsites.net/" Target="_blank">Demo</MudButton>
+                        </MudCardContent>
+                    </MudItem>
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudImage Src="/Photos/Accounta Bank.png" ObjectFit="@ObjectFit.Cover" Alt="Accountability Tracking App" Class="project-image" />
+                    </MudItem>
+                </MudGrid>
+            </MudCard>
+        </MudItem>
+
+        <!-- Portfolio Site -->
+        <MudItem xs="12" sm="12" md="12" Class="project-item">
+            <MudCard Class="project-card">
+                <MudGrid Class="project-grid">
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudImage Src="/Photos/portfolio hero photo 12.png" ObjectFit="@ObjectFit.Cover" Alt="Portfolio Site" Class="project-image" />
+                    </MudItem>
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudCardContent Class="project-content">
+                            <MudText Typo="Typo.h5" Class="project-title">Portfolio Site</MudText>
+                            <MudText Typo="Typo.body2" Class="project-description">A personal portfolio website built with .NET and Blazor WebAssembly, deployed on Azure. The site includes a QA chatbot, also hosted on Azure, which has been custom-trained using Azure services to provide personalized responses.</MudText>
+                            <MudButton Href="/" Target="_blank">Demo</MudButton>
+                        </MudCardContent>
+                    </MudItem>
+                </MudGrid>
+            </MudCard>
+        </MudItem>
+
+        <!-- Athlete Evaluation Algorithm and Data Collector -->
+        <MudItem xs="12" sm="12" md="12" Class="project-item">
+            <MudCard Class="project-card">
+                <MudGrid Class="project-grid">
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudCardContent Class="project-content">
+                            <MudText Typo="Typo.h5" Class="project-title">Athlete Evaluation Algorithm and Data Collector</MudText>
+                            <MudText Typo="Typo.body2" Class="project-description">This project was my introduction to programming. Initially, I used Excel to evaluate game film before understanding what coding truly entailed. I created an aggregate algorithm in Excel to analyze and produce performance reports from game footage.</MudText>
+                            <MudButton Href="https://github.com/SyborgIII/PlayerEvaluationAggregatee" Target="_blank">Download on Github</MudButton>
+                        </MudCardContent>
+                    </MudItem>
+                    <MudItem xs="6" sm="6" md="6" Class="project-half">
+                        <MudImage Src="/Photos/Football.jpg" ObjectFit="@ObjectFit.Cover" Alt="Athlete Evaluation Algorithm and Data Collector" Class="project-image" />
+                    </MudItem>
+                </MudGrid>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    // Code-behind logic if necessary
+}

@@ -1,0 +1,98 @@
+﻿@page "/about"
+@using MudBlazor
+
+@* <h1 class="header">Learn About Me</h1>
+<p class="description">
+    Welcome! Here you can learn about my skills, education, experience, and bio.
+</p> *@
+<MudContainer Class="section-header">
+    <MudGrid>
+        <MudItem xs="12" sm="12" md="12">
+            <div class="additional-item">
+                <MudText Typo="Typo.h5" Class="additional-title">Learn About Me</MudText>
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12">
+            <div class="additional-item">
+                <MudText Typo="Typo.body2" Class="additional-description">Welcome! Here you can learn about my skills, education, experience, and bio.</MudText>
+            </div>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+<MudDivider />
+
+<MudPaper Width="100%" Class="about-paper">
+    <MudList T="string">
+        <MudListSubheader>
+            Learn More About Me
+        </MudListSubheader>
+        <MudListItem Icon="@Icons.Material.Filled.Person" Text="Bio" Expanded="@(_expandedBio)">
+            <NestedList>
+                <MudListItem>
+                    <p class="nested-item">I’m Simon Codrington III, and I am a Master’s Degree student in the field of Software Engineering with some experience working as a software developer. I am a strategist who likes planning for all of the possibilities. I am committed to learning and expanding my personal knowledge base. I value having the time and space to do a job correctly the first time. One of my personal mottos is “first do it right, then do it fast.” The fastest way to get something done may not be the best or most efficient. I am persistent and tenacious with my work. When faced with a challenge, my question is not “can this be done?”. My question is “how do we make this happen?”. I enjoy long-term planning and then seeing that plan executed. I enjoy strategy outside of work as well, and can frequently be found engaging in strategy-based games (like Magic the Gathering). I spend much of my free time with my family, which consists of my fiancé and my 8 year old daughter. I currently reside near Orlando, FL and am originally from Miami. After graduating high school, I played football for the University of Florida where I graduated with a degree in Sociology. I then spent time teaching Algebra and AP Statistics and coaching football before ultimately pursuing a life in tech.</p>
+                </MudListItem>
+            </NestedList>
+        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.School" Text="Education" Expanded="@(_expandedEducation)">
+            <NestedList>
+                <MudListItem>
+                    <p class="nested-item">- I received my Bachelor’s degree in Sociology from the University of Florida.</p>
+                    <p class="nested-item">- I completed a Master’s of Software Engineering Bridge through Grand Canyon University</p>
+                    <p class="nested-item">- I am currently working on a Master’s of Software Engineering through Grand Canyon University in my free time. I am on track to complete this degree in April 2025.</p>
+                </MudListItem>
+            </NestedList>
+        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Work" Text="Experience" Expanded="@(_expandedExperience)">
+            <NestedList>
+                <MudListItem Icon="@Icons.Material.Filled.Work" Text="Software Engineering" Expanded="@(_expandedSoftwareEngineering)">
+                    <NestedList>
+                        <MudListItem>
+                            <p class="nested-item">- Assigned as product owner in agile/scrum environment for software that oversees shipment tracking for home infusion care across multiple hospitals/pharmacies, totaling millions of dollars</p>
+                            <p class="nested-item">- Responsible for helping implement full stack encryption solution for product to ensure security of highly sensitive medical data of 1,000+ patients and 10,000+ shipments. </p>
+                            <p class="nested-item">- Conducted daily complex relational database queries for product monitoring and communicating insights to stakeholders and clients.</p>
+                            <p class="nested-item">- Maintained detailed documentation of daily tasks, program information, and operating procedures. </p>
+                            <p class="nested-item">- Developed and deployed full stack web and machine learning applications onto cloud platform (Azure) including chatbot.</p>
+                            <p class="nested-item">- Conducted an exploratory data analysis of for every division 1 football program over the last 10 years through use of regression analysis, data cleansing, and data visualization using various machine-learning libraries. </p>
+                        </MudListItem>
+                    </NestedList>
+                </MudListItem>
+                <MudListItem Icon="@Icons.Material.Filled.Work" Text="Academia" Expanded="@(_expandedAcademia)">
+                    <NestedList>
+                        <MudListItem>
+                            <p class="nested-item">- Taught AP Statistics, Precalculus, and Algebra II, consistently achieving highest evaluation ratings and surpassing student growth expectations.</p>
+                            <p class="nested-item">- Communicating with parents, students, teachers, and other stakeholders to provide accurate and timely documentation and feedback for 150+ students yearly.</p>
+                            <p class="nested-item">- Engaged in data analysis of various parameters (e.g. attendance, grades, etc.) to provide appropriate supports, interventions, and enrichment. </p>
+                            <p class="nested-item">- Initiated a Computer Programming Class and after-school program to enhance students' competence in AP Computer Science.</p>
+                        </MudListItem>
+                    </NestedList>
+                </MudListItem>
+            </NestedList>
+        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Star" Text="Skills" Expanded="@(_expandedSkills)">
+            <NestedList>
+                <MudListItem>
+                    <p class="nested-item">- Programming/Scripting Languages: Java, Python, C#, SQL, JavaScript, HTML, CSS </p>
+                    <p class="nested-item">- Frameworks/Libraries: Pandas, Plotly, Angular, Django, ASP.NET Framework/Core (Maui, WPF, MVC, Blazor) </p>
+                    <p class="nested-item">- Cloud Computing Platforms: Azure DevOps.</p>
+                </MudListItem>
+            </NestedList>
+        </MudListItem>
+    </MudList>
+</MudPaper>
+
+@code {
+    private bool _expandedBio = false;
+    private bool _expandedEducation = false;
+    private bool _expandedExperience = false;
+    private bool _expandedSoftwareEngineering = false;
+    private bool _expandedAcademia = false;
+    private bool _expandedSkills = false;
+
+    private void ToggleBio() => _expandedBio = !_expandedBio;
+    private void ToggleEducation() => _expandedEducation = !_expandedEducation;
+    private void ToggleExperience() => _expandedExperience = !_expandedExperience;
+    private void ToggleSoftwareEngineering() => _expandedSoftwareEngineering = !_expandedSoftwareEngineering;
+    private void ToggleAcademia() => _expandedAcademia = !_expandedAcademia;
+    private void ToggleSkills() => _expandedSkills = !_expandedSkills;
+}

@@ -1,0 +1,30 @@
+﻿/* Example Custom Animation */
+.animate__bounceIn {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__bounceOut {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__backInDown {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__backOutDown {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__rotateIn {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__rotateOut {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,56 @@
+﻿/* Showcase.css */
+
+.section-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent background color */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project-item {
+    margin-bottom: 20px; /* Space between project cards */
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.6); /* More translucent background to blend with layout */
+    color: white;
+    border: none; /* Remove the border to blend in seamlessly */
+    box-shadow: none; /* Remove any box shadow to blend in */
+}
+
+.project-grid {
+    display: flex;
+}
+
+.project-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-content {
+    color: white;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.project-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem; /* Adjusted to be larger */
+}
+
+.project-description {
+    color: white;
+    font-size: 1.2rem; /* Adjusted to match the About description */
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mud-button-root {
+    font-size: 1.1rem; /* Adjusted to make button text larger */
+}

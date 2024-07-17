@@ -1,0 +1,76 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+@using SimonCodringtonIIIPortfolioApp.Components
+
+<MudThemeProvider IsDarkMode="true"/>
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudAppBar Elevation="0" Class="app-bar">
+    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+                   @onclick="DrawerToggle" @onmouseover="() => ToggleDrawer(true)" @onmouseleave="() => ToggleDrawer(false)" />
+    <MudSpacer />
+    <MudButton Href="/">Home</MudButton>
+    <MudButton Href="about">About</MudButton>
+    <MudButton Href="showcase">Showcase</MudButton>
+    <MudButton Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me">Contact</MudButton>
+    <MudSpacer />
+@*     <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+ *@</MudAppBar>
+
+<MudLayout class="custom-layout">
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="4" Variant="DrawerVariant.Temporary" Position="DrawerPosition.Left">
+        <MudDrawerHeader class="drawer-header">
+            <MudText Typo="Typo.h5" Class="mt-1">Welcome</MudText>
+        </MudDrawerHeader>
+        <MudNavMenu class="drawer-nav">
+            <MudNavLink Href="/">Home</MudNavLink>
+            <MudNavLink Href="about">About</MudNavLink>
+            <MudNavLink Href="showcase">Showcase</MudNavLink>
+            <MudNavLink Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me">Contact</MudNavLink>
+        </MudNavMenu>
+    </MudDrawer>
+
+@*     <MudMainContent class="main-content">
+        <div class="content">
+            @Body
+        </div>
+    </MudMainContent> *@
+
+    <MudMainContent Style="padding: 20px; background-color: black; min-height: calc(100vh - 64px);">
+        <MudPaper Elevation="0" Class="d-flex flex-column" Style="padding: 20px; background-color: black; min-height: 100vh;">
+            @Body
+        </MudPaper>
+    </MudMainContent>
+
+    <Footer />
+</MudLayout>
+
+@code {
+    bool _drawerOpen = false;
+    bool _mouseOverMenu = false;
+
+    async Task DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+        if (!_drawerOpen)
+        {
+            await Task.Delay(200);
+            if (!_mouseOverMenu)
+                _drawerOpen = false;
+        }
+    }
+
+    void ToggleDrawer(bool open)
+    {
+        if (open)
+        {
+            _drawerOpen = true;
+            _mouseOverMenu = true;
+        }
+        else
+        {
+            _mouseOverMenu = false;
+        }
+    }
+}
