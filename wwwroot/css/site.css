@@ -1,62 +1,62 @@
 ﻿/* Adjust padding and margins for better spacing */
-.content {
+/*.content {
     padding: 20px;
     margin: 20px;
-    background-color: black; /* Set background color to black */
-    min-height: 100vh; /* Ensure the content takes up the full height */
-}
+    background-color: black;*/ /* Set background color to black */
+    /*min-height: 100vh;*/ /* Ensure the content takes up the full height */
+/*}*/
 
 /* Style for the app bar */
-.app-bar {
-    background-color: rgba(0, 0, 0, 0); /* Translucent background color */
-    color: white;
-    border: none; /* Remove borders */
-}
+/*.app-bar {
+    background-color: rgba(0, 0, 0, 0);*/ /* Translucent background color */
+    /*color: white;
+    border: none;*/ /* Remove borders */
+/*}*/
 
 /* Style for the drawer header */
-.drawer-header {
+/*.drawer-header {*/
     /*background-color: white;*/ /* Example color */
     /*color: white;*/
-}
+/*}*/
 
 /* Style for navigation links in the drawer */
-.drawer-nav {
+/*.drawer-nav {
     padding-top: 20px;
 
-}
+}*/
 
 /* Adjust main content area */
-.main-content {
+/*.main-content {
     padding: 20px;
-    background-color: black; /* Set background color to black */
-    min-height: calc(100vh - 64px); /* Adjust for app bar height */
-}
+    background-color: black;*/ /* Set background color to black */
+    /*min-height: calc(100vh - 64px);*/ /* Adjust for app bar height */
+/*}*/
 
 /* Styles for hover effect on MudIconButton */
-.mud-app-bar .mud-icon-button:hover {
+/*.mud-app-bar .mud-icon-button:hover {
     cursor: pointer;
-}
+}*/
 
 /* Footer styles */
-footer {
-    background-color: black; /* Set background color to black */
-    color: white;
+/*footer {
+    background-color: black;*/ /* Set background color to black */
+    /*color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
+}*/
 
 /* Ensure full height of MudMainContent */
-.mud-main-content {
+/*.mud-main-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 64px); /* Adjust for app bar height */
-    margin-top: 64px; /* Adjust for app bar height */
-}
+    min-height: calc(100vh - 64px);*/ /* Adjust for app bar height */
+    /*margin-top: 64px;*/ /* Adjust for app bar height */
+/*}*/
 
 /* Ensure full height of MudDrawer */
-.mud-drawer {
-    height: calc(100vh - 64px); /* Adjust for app bar height */
-}
+/*.mud-drawer {
+    height: calc(100vh - 64px);*/ /* Adjust for app bar height */
+/*}*/

@@ -4,55 +4,49 @@
 <PageTitle>Home</PageTitle>
 
 <MudContainer>
-    <MudCarousel Class="mud-width-full hero-carousel" AutoCycle="true" AutoCycleTime="@(TimeSpan.FromSeconds(9))" TData="object">
+    <MudCarousel AutoCycle="true" AutoCycleTime="@(TimeSpan.FromSeconds(9))" TData="object" Style="height:550px;" >
         <MudCarouselItem Transition="Transition.Custom" CustomTransitionEnter="animate__animated animate__rotateIn" CustomTransitionExit="animate__animated animate__rotateOut">
             <!-- First Slide Content -->
-            <MudGrid Class="hero-grid">
-                <MudItem xs="12" sm="6" md="6" Class="hero-grid-item">
-                    <MudContainer Class="hero-content">
-                        <MudText Typo="Typo.h1">COLLABORATE, LEARN, SLEEP, REPEAT!</MudText>
-                        <MudText Typo="Typo.body1">My name is Simon Codrington III, a Software Engineer with a passion for Data Science. Click around and learn more!</MudText>
-                        <MudButton Class="custom-mud-button" Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me" Target="_blank">LET'S COLLAB!</MudButton>
-                    </MudContainer>
+            <MudGrid>
+                <MudItem xs="12" md="6" Class="d-flex flex-column justify-center align-center">
+                    <MudText Typo="Typo.h4" Align="Align.Center">BUILDING RELIABLE, SECURE, AND SCALABLE SOLUTIONS!</MudText>
+                    <MudText Typo="Typo.body1" Align="Align.Center">My name is Simon Codrington III, a Software Engineer with a passion for Data Science. Click around and learn more!</MudText>
+                    <MudButton Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me" Target="_blank" Variant="Variant.Filled" Color="Color.Primary">LET'S COLLAB!</MudButton>
                 </MudItem>
-                <MudItem xs="6" sm="6" md="6" Class="hero-grid-item">
-                    <MudImage Class="hero-image" ObjectFit="@ObjectFit.Cover" Src="/Photos/profile pic 2.png" Alt="Hero Image 1" />
+                <MudItem xs="12" md="6" Class="d-flex justify-center align-center">
+                    <MudImage ObjectFit="ObjectFit.Cover" Src="/Photos/profile pic 2.png" Alt="Hero Image 1" />
                 </MudItem>
             </MudGrid>
         </MudCarouselItem>
         <MudCarouselItem Transition="Transition.Custom" CustomTransitionEnter="animate__animated animate__backInDown" CustomTransitionExit="animate__animated animate__backOutDown">
             <!-- Second Slide Content -->
-            <MudGrid Class="hero-grid">
-                <MudItem xs="12" sm="6" md="6" Class="hero-grid-item">
-                    <MudContainer Class="hero-content">
-                        <MudText Typo="Typo.h2">THE PROJECT SHOWCASE!</MudText>
-                        <MudText Typo="Typo.body1">Review some passion projects built with industry best practices. Topics that range from athletics to education!</MudText>
-                        <MudButton Class="custom-mud-button" Href="showcase" Target="_blank">EXPLORE THE PROJECTS!</MudButton>
-                    </MudContainer>
+            <MudGrid>
+                <MudItem xs="12" md="6" Class="d-flex flex-column justify-center align-center" >
+                    <MudText Typo="Typo.h4" Align="Align.Center">THE PROJECT SHOWCASE!</MudText>
+                    <MudText Typo="Typo.body1" Align="Align.Center">Review some passion projects built with industry best practices. Topics that range from athletics to education!</MudText>
+                    <MudButton Href="showcase" Target="_blank" Variant="Variant.Filled" Color="Color.Primary">EXPLORE PROJECTS!</MudButton>
                 </MudItem>
-                <MudItem xs="6" sm="6" md="6" Class="hero-grid-item">
-                    <MudImage Class="hero-image" ObjectFit="@ObjectFit.Cover" Src="/Photos/portfolio hero photo 13.png" Alt="Hero Image 2" />
+                <MudItem xs="12" md="6" Class="d-flex justify-center align-center">
+                    <MudImage ObjectFit="ObjectFit.Cover" Src="/Photos/portfolio hero photo 13.png" Alt="Hero Image 2"  />
                 </MudItem>
             </MudGrid>
         </MudCarouselItem>
         <MudCarouselItem Transition="Transition.Custom" CustomTransitionEnter="animate__animated animate__rotateIn" CustomTransitionExit="animate__animated animate__rotateOut">
             <!-- Third Slide Content -->
-            <MudGrid Class="hero-grid">
-                <MudItem xs="12" sm="6" md="6" Class="hero-grid-item">
-                    <MudContainer Class="hero-content">
-                        <MudText Typo="Typo.h2">CHAT WITH JARVIS!</MudText>
-                        <MudText Typo="Typo.body1">Use my custom-trained AI service to learn more about me. Check it out down below!</MudText>
-                    </MudContainer>
+            <MudGrid >
+                <MudItem xs="12" md="6" Class="d-flex flex-column justify-center align-center">
+                    <MudText Typo="Typo.h4" Align="Align.Center">CHAT WITH JARVIS!</MudText>
+                    <MudText Typo="Typo.body1" Align="Align.Center">Use my custom-trained AI service to learn more about me. Check it out down below!</MudText>
                 </MudItem>
-                <MudItem xs="6" sm="6" md="6" Class="hero-grid-item">
-                    <MudImage Class="hero-image" ObjectFit="@ObjectFit.Cover" Src="/Photos/SiBorg.png" Alt="Hero Image 3" />
+                <MudItem xs="12" md="6" Class="d-flex justify-center align-center">
+                    <MudImage ObjectFit="ObjectFit.Cover" Src="/Photos/SiBorg.png" Alt="Hero Image 3"/>
                 </MudItem>
             </MudGrid>
         </MudCarouselItem>
     </MudCarousel>
 
     <MudGrid>
-        <MudItem xs="12" sm="12" md="12">
+        <MudItem xs="12">
             <ChatBot />
         </MudItem>
     </MudGrid>

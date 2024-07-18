@@ -1041,3 +1041,4 @@ C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\obj\Debug\net8.0
 C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\obj\Debug\net8.0\refint\SimonCodringtonIIIPortfolioApp.dll
 C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\obj\Debug\net8.0\SimonCodringtonIIIPortfolioApp.pdb
 C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\obj\Debug\net8.0\ref\SimonCodringtonIIIPortfolioApp.dll
+C:\Users\simon\Personal Projects\SimonCodringtonIIIPortfolioApp\obj\Debug\net8.0\SimonCodringtonIIIPortfolioApp.sourcelink.json

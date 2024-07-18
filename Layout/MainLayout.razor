@@ -2,28 +2,27 @@
 @using MudBlazor
 @using SimonCodringtonIIIPortfolioApp.Components
 
-<MudThemeProvider IsDarkMode="true"/>
+<MudThemeProvider IsDarkMode="true" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
-<MudAppBar Elevation="0" Class="app-bar">
-    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
-                   @onclick="DrawerToggle" @onmouseover="() => ToggleDrawer(true)" @onmouseleave="() => ToggleDrawer(false)" />
-    <MudSpacer />
-    <MudButton Href="/">Home</MudButton>
-    <MudButton Href="about">About</MudButton>
-    <MudButton Href="showcase">Showcase</MudButton>
-    <MudButton Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me">Contact</MudButton>
-    <MudSpacer />
-@*     <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
- *@</MudAppBar>
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+                       @onclick="DrawerToggle" @onmouseover="() => ToggleDrawer(true)" @onmouseleave="() => ToggleDrawer(false)" />
+        <MudSpacer />
+        <MudButton Href="/">Home</MudButton>
+        <MudButton Href="about">About</MudButton>
+        <MudButton Href="showcase">Showcase</MudButton>
+        <MudButton Href="https://portfoliowebapplicationresource.azurewebsites.net/contact-me">Contact</MudButton>
+        <MudSpacer />
+    </MudAppBar>
 
-<MudLayout class="custom-layout">
     <MudDrawer @bind-Open="_drawerOpen" Elevation="4" Variant="DrawerVariant.Temporary" Position="DrawerPosition.Left">
-        <MudDrawerHeader class="drawer-header">
-            <MudText Typo="Typo.h5" Class="mt-1">Welcome</MudText>
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h5">Welcome</MudText>
         </MudDrawerHeader>
-        <MudNavMenu class="drawer-nav">
+        <MudNavMenu>
             <MudNavLink Href="/">Home</MudNavLink>
             <MudNavLink Href="about">About</MudNavLink>
             <MudNavLink Href="showcase">Showcase</MudNavLink>
@@ -31,16 +30,14 @@
         </MudNavMenu>
     </MudDrawer>
 
-@*     <MudMainContent class="main-content">
-        <div class="content">
-            @Body
-        </div>
-    </MudMainContent> *@
-
-    <MudMainContent Style="padding: 20px; background-color: black; min-height: calc(100vh - 64px);">
-        <MudPaper Elevation="0" Class="d-flex flex-column" Style="padding: 20px; background-color: black; min-height: 100vh;">
-            @Body
-        </MudPaper>
+    <MudMainContent Style="background-color: black; ">
+        <MudGrid>
+            <MudItem xs="12" sm="12" >
+                <MudPaper Elevation="0" Style=" background-color: black; ">
+                    @Body
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
     </MudMainContent>
 
     <Footer />
