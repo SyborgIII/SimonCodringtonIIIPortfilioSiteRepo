@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimonCodringtonIIIPortfolioApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cb9aada522fc5062eccee3b3ccaf1e6625a2b61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b06bb18dc40700aa25803b39c7a1384d75dc9f6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimonCodringtonIIIPortfolioApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimonCodringtonIIIPortfolioApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

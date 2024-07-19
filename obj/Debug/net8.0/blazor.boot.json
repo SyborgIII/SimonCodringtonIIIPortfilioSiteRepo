@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SimonCodringtonIIIPortfolioApp",
   "resources": {
-    "hash": "sha256-bQ45RcSmYCNy0zRpkiTqL1b6ncNXbJHnKTas9Ld/WSQ=",
+    "hash": "sha256-Jlof6mCOqJRUJEGvas4bRBKNPFVPVsBrchF2509X28g=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.4ij8j28jnw.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -211,10 +211,10 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "SimonCodringtonIIIPortfolioApp.wasm": "sha256-01eWSkAgGsBdFrZxmaAIEtC4UPFjJFdZ7zzHWPB2wj4="
+      "SimonCodringtonIIIPortfolioApp.wasm": "sha256-x4nRRD/H3p/oMf9RKAED3oNbec/p+c9LQDRbn0PgaAc="
     },
     "pdb": {
-      "SimonCodringtonIIIPortfolioApp.pdb": "sha256-cLlzuZAMh469uAqA8+jvbfKSB0GLbMui50XkFAsXF60="
+      "SimonCodringtonIIIPortfolioApp.pdb": "sha256-UwqEUlGxbc0a6dU9xIt0RQKFCKPbT8R976OpAUFx6DQ="
     }
   },
   "cacheBootResources": true,

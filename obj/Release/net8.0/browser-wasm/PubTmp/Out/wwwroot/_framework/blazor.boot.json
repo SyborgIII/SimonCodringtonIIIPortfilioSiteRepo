@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SimonCodringtonIIIPortfolioApp",
   "resources": {
-    "hash": "sha256-7iSo71sbMjJyv9R+mQgGea8tB+5ubj1hTOo1OyZU6nU=",
+    "hash": "sha256-hKd/sgJMz8PrdfQlEq/2zwXrZB4/WA+Mcdemt6/kOmw=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.4ij8j28jnw.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -35,7 +35,7 @@
       "Microsoft.JSInterop.wasm": "sha256-LFEySM8Y7K8Po/tGNqDWegNpFEJRYBzDEHU1fNg3sD4=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-CQVLCKiSxLN5ghyJZG3mhnMGRROdqrbNUjtAXB0nWb8=",
       "MudBlazor.wasm": "sha256-cS26QxSI9LFsYa8FlGqSWsVPPprypu+4kDbtS9pIwt8=",
-      "SimonCodringtonIIIPortfolioApp.wasm": "sha256-Zdj6Qr2A31h5AnESViXTjTykE+SesnmM1IFWHDFbSkM=",
+      "SimonCodringtonIIIPortfolioApp.wasm": "sha256-uuYAXKciNZVUr647phHBsakR10bCeaVkbwnMwkDg0HE=",
       "System.Collections.Concurrent.wasm": "sha256-WkbrBSXcO3jAeirif7yITUfyxGz15UaTFka25O8VkQs=",
       "System.Collections.Immutable.wasm": "sha256-7aP/Dp2mW/dGAmYH0Y75GiRpa9+I2aMB3uMP68Agn3Q=",
       "System.Collections.wasm": "sha256-mMbKVYmSqFvFCWNsGP6HXRPPAYn/TF4sxRB0+kdfOdg=",
